@@ -1,0 +1,16 @@
+RewriteEngine on
+
+
+RewriteRule ^activities activity.php [NC,L]
+
+RewriteRule ^home index.php [NC,L]
+
+RewriteRule ^about about.php [NC,L]
+
+RewriteRule ^contactus contact.php [NC,L]
+
+RewriteRule ^login login.php [NC,L]
+
+RewriteRule ^activity/([0-9]+) activityfull.php?activity=$1 [NC,L]
+
+RewriteRule ^post/([0-9]+) postfull.php?post=$1 [NC,L]

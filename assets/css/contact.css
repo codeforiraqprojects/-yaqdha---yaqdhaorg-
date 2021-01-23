@@ -1,0 +1,133 @@
+@font-face {
+	font-family: 'HacenPromoter';
+	font-style: normal;
+	font-weight: normal;
+	src: local('HacenPromoter'), url('../fonts/HacenPromoter.ttf') format('woff');
+    }
+    
+@font-face {
+    font-family: 'Cooper Std Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cooper Std Black'), url('../fonts/CooperBlack-Std.woff') format('woff');
+    }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.container
+{
+    animation-name: fadein;
+    animation-duration: 1.2s;
+}
+body {
+    background-color: #e8e8e6;
+    margin: 0;
+    padding: 0;
+    font-family:'HacenPromoter';
+    font-weight:normal;
+    }
+
+
+.contactimg
+{
+    width: 70px;position: absolute;transform: translate(0,-20%);
+}
+.device
+{
+    width: 300px;
+    height: 401px;
+    margin-right: -17px;
+    border-radius: 0 20px 20px 0;
+    margin-top: 27px;
+}
+.join
+{
+    margin-bottom: 26px !important;
+    text-align: left;
+}
+@media(max-width:991px){
+    .contactimg
+        {
+            width: 60px;position: absolute;transform: translate(70%,-20%);
+        }
+}
+@media(max-width:426px){
+    .contactimg
+        {
+            transform: translate(-150%,-20%);
+        }
+}
+@media(max-width:768px){
+    .contactpa{
+        margin-left: 40px;
+    }
+    .device
+    {
+        height: 395px;
+    }
+}
+
+
+@media (max-width:767px){
+    .logo
+    {    
+        float: unset !important;
+        margin-right: 140px !important;
+    }
+}
+@media (max-width:376px){
+    .logo
+    {    
+        float: unset !important;
+        margin-right: 110px !important;
+    }
+}
+@media (max-width:320px){
+    .logo
+    {    
+        float: unset !important;
+        margin-right: 95px !important;
+    }
+}
+
+
+.highlight-phone{color:#313437;background-color:#eef4f7;overflow:hidden}.highlight-phone p{color:#7d8285}.highlight-phone h2{font-weight:700;margin-bottom:35px;line-height:1.5;padding-top:0;margin-top:0;color:inherit}.highlight-phone .intro{font-size:18px;max-width:500px;line-height:1.5;margin-left: 90px;}@media (max-width:767px){.highlight-phone{text-align:center}.highlight-phone .intro{max-width:none}}.highlight-phone .intro p{margin-bottom:35px}.highlight-phone .intro .btn{padding:16px 32px;border:none;background:0 0;box-shadow:none;text-shadow:none;opacity:.9;text-transform:uppercase;font-weight:700;font-size:13px;letter-spacing:.4px;line-height:1}.highlight-phone .intro .btn:hover{opacity:1}.highlight-phone .intro .btn:active{transform:translateY(1px)}.highlight-phone .intro .btn-primary{background-color:#055ada;color:#fff}.highlight-phone .iphone-mockup{position:relative;max-width:260px;margin-top:-30px;margin-bottom:-230px}.highlight-phone .iphone-mockup .screen{position:absolute;width:110%;height:100%;top:1%;overflow:hidden;background:url(../img/girlcontact.png) center;background-size:cover}
+.contactcard
+{
+    width: 90%;
+    border:1px solid #fff;
+    border-radius:20px;
+    box-shadow:0 4px 8px rgba(0,0,0,.1);
+    margin: 10px auto !important;
+}
+
+@media (max-width:768px){
+    .highlight-phone .intro
+    {
+        font-size: 14px;
+        margin-left: 40px;
+    }
+}
+@media (max-width:426px){
+    .highlight-phone .intro
+    {
+        font-size: unset;
+        margin-left: unset;
+    }
+    .contactcard
+{
+    width:96%;
+    font-size: 15px;
+    margin-right:10px;
+}
+}
+@media (max-width:376px){
+    .contactcard
+{
+    width:97%;
+    font-size: 12px;
+}
+}
